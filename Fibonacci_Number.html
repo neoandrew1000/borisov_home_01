@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Число Фибоначи</title>
+	<script>
+		function fibonacciNumber(n){ //n - порядковый номер выводимого числа
+			var i = 0;
+			var fib1 = 0; 
+			var fib2 = 1; 
+			var fibSum;
+			while (i < (n-1)) {
+	    		fibSum = fib1 + fib2;
+				fib1 = fib2;
+				fib2 = fibSum;
+				i++;
+			}
+			return fibSum;
+		}
+		alert(fibonacciNumber(5));
+	</script>
+</head>
+<body>
+</body>
+</html>
